@@ -1,0 +1,84 @@
+.board {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); /* Creates a 3x3 grid */
+    gap: 10px; /* Space between cells */
+    margin: 20px auto; /* Centering the grid */
+    max-width: 300px; /* Restricting the maximum width of the grid */
+    margin-left: 0px;
+    margin-right: 110px;
+    margin-top: 5px;
+    padding: 0px;
+}
+
+.header {
+    text-align: center;
+    background-color: yellow;
+    margin: 0px;
+}
+
+h2 {
+    font-size: 48px;
+    margin: 0px;
+    color: red;
+}
+
+.cell {
+    background-color: lightgray;
+    border: 2px solid #333;
+    font-size: 48px;
+    font-weight: bold;
+    aspect-ratio: 1 / 1; /* Ensures that cells are square */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 73px; /* Set a fixed height for better visual */
+    color: #444; /* Default text color */
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.current {
+    background-color: #fff;
+}
+
+
+.correct {
+    background-color: lightgreen;
+}
+
+.incorrect {
+    background-color: rgb(236, 117, 117);
+}
+
+.empty {
+	background: none;
+	border: none;
+}
+
+.difficultySelection {
+    display: flex;
+    flex-direction: row;
+}
+
+label {
+    font-size: 24px;
+    margin-top: 10px;
+}
+
+button {
+    margin-top: 10px;
+    background-color: pink;
+    color: darkblue;
+    border: 0.1px solid black;
+    font-size: 24px;
+}
+
+#gameContainer {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    justify-self: center;
+    align-items: center;
+    justify-items: center;
+    background-color: lightblue;
+}
